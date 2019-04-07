@@ -1,4 +1,9 @@
 <?php
+/**
+ * @author Pavel K p.kolomeitsev@gmail.com
+ *
+ * This is workaround class to fix deleted flag conflicts with deleted column in a table
+ */
 
 namespace AppBundle\Propel\Generator\Builder\Om;
 
