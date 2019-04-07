@@ -80,11 +80,13 @@ propel:
                 password: '%database_password%'
                 dsn: 'mysql:host=%database_host%;dbname=%database_name%;charset=UTF8'
     generator:
+        # path to DB schema XML fle
         targetPackage: '%kernel.project_dir%/src/AppBundle/Resources/config'
         schema:
             basename: PropelModels
             autoPackage: true
             autoNamespace: true
-#        objectModel:
-#            builders:
-#                object: \AppBundle\Propel\Generator\Builder\Om\PropelObjectBuilder
+        objectModel:
+            # custom Model builder
+            builders:
+                object: \AppBundle\Propel\Generator\Builder\Om\PropelObjectBuilder
