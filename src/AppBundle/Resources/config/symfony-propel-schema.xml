@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database name="default" defaultIdMethod="native" defaultPhpNamingMethod="underscore" namespace="AppBundle\PropelModels">
+  <table name="users" idMethod="native" phpName="Users">
+    <column name="id" phpName="Id" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="user_name" phpName="UserName" type="VARCHAR" size="255" required="true"/>
+    <column name="user_nick_name" phpName="UserNickName" type="VARCHAR" size="255" required="true"/>
+    <column name="last_updated" phpName="LastUpdated" type="TIMESTAMP" required="true"/>
+    <column name="deleted" phpName="Deleted" type="INTEGER"/>
+    <vendor type="mysql">
+      <parameter name="Engine" value="InnoDB"/>
+    </vendor>
+  </table>
+</database>
